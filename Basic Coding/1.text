@@ -1,0 +1,333 @@
+Addition of 2 Variables
+
+Task Points: 25
+
+Points Awarded: 25/25
+
+Test Cases passed: 7/7
+
+Task Status:
+Reviewed
+
+Task details
+
+Write a program to Add two Variables a and b (a and b is being provided by the user your task is to display the sum)
+
+
+
+Example:-
+
+
+
+Input
+
+a=3 , b=4
+
+Output
+
+7
+
+
+
+Input
+
+a=10, b=6
+
+Output:-
+
+16
+
+
+
+Before trying to code Understand what do we mean by input as a parameter :- Video_Link
+
+function add(a, b){
+    //write the code to add two numbers inside this block
+    
+    console.log(a+b);
+    
+    //dont change the below code. If changed click on reset.
+   
+}
+
+
+
+
+
+
+2.Write a program to perform the following operation
+
+a+b-c
+
+Note (a, b and c is being provided by the user. Your task is to display a+b-c)
+
+
+
+Example:-
+
+
+
+Input
+
+a=3 , b=4, c=9
+
+Output
+
+-2
+
+
+
+Input
+
+a=10, b=6, c=4
+
+Output:-
+
+12
+function calculate(a, b, c){
+    //write the code to calculate a+b-c
+    console.log(a+b-c);
+    
+    
+    //dont change the below code. If changed click on reset.
+   
+}
+
+
+3.Task details
+
+Write a program to perform the following operation
+
+(a+b) * c ( * is a multiplication sign)
+
+Note (a, b and c is being provided by the user. Your task is to display result)
+
+
+
+Example:-
+
+
+
+Input
+
+a=3 , b=4, c=9
+
+Output
+
+63
+
+
+
+Input
+
+a=10, b=6, c=4
+
+Output:-
+
+64
+
+function calculate(a, b, c){
+    //write the code to calculate (a+b)*c
+    
+    console.log((a+b)*c)
+    
+    //dont change the below code. If changed click on reset.
+   
+}
+
+4.Write a program to Swap two Variables a and b (Swapping basically means interchanging)
+
+
+
+Example:-
+
+Input
+
+a=3 , b=4
+
+Output
+
+a=4, b=3
+function swap(a, b){
+    //write the code to swap two numbers inside this block
+    
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    //dont change below code
+    console.log('a value is =', a);
+    console.log('b value is =', b)
+}
+
+
+5.Write a program to print the largest number of the two numbers given.
+
+
+
+Input:-
+
+a=3, b=4
+
+Output:
+
+4
+function max(a, b){
+    /*write the code to find the maximum between two numbers below 
+     only print the maximum number  */
+    
+    if(a<b){
+        console.log(b);
+    }else{
+        console.log(a);
+    }
+    
+}
+
+Write a program to print the largest of the three numbers.
+
+
+
+Input:-
+
+a=3, b=5, c=1
+
+Output:-
+
+5
+
+If you have any doubts or confusion refer to the hints to view the video solution.
+function max(a, b, c){
+    /*write the code to find the maximum between the three numbers below 
+     only print the maximum number  */
+    
+    if(a>b&a>c){
+        console.log(a);
+    }else if(b>a&b>c){
+        console.log(b);
+    }else{
+        console.log(c);
+    }
+    
+}
+
+
+Given a variable D (distance) write a program to print the cost associated with it as shown in the image:-
+
+
+
+
+
+
+
+Input:-
+
+D = 700
+
+Output:-
+
+10
+
+function print_cost(distance){
+    /*write the code below to print the cost
+     if the distance is given   */
+    
+    if(distance>1000){
+        console.log(12);
+        
+    }else if(distance>500)
+    {
+        console.log(10)
+    }else if(distance>100)
+    {
+        console.log(8)
+    }else{
+        console.log(5)
+    }
+}
+
+If Marks> =40 --> pass
+
+ELSE ---> fail
+
+
+
+Input:-
+
+Marks =52
+
+Ouput:-
+
+pass
+function has_passed(marks){
+        /*write the code to find the whether a candidate has passed or failed 
+        only print "pass" or "fail" */
+
+    
+    let a= marks>=40 ? "pass" : "fail";
+    console.log(a);
+    
+}
+
+Example:-
+
+Input:-
+
+a=3, b=5
+
+Output:-
+
+5
+
+function max(a, b){
+    /*write the code to find the maximum between two numbers below 
+     only print the maximum number  */
+    
+     a>b ? console.log(a):console.log(b)
+    
+}
+
+Given the Day number, print the Day name in lower case corresponding to it by using the help of switch statement.
+
+Note: Day 1 - is monday.
+
+If the day is not valid example 1> day >7 then print invalid
+
+
+
+Input :-
+
+Day - 3
+
+Output :-
+
+wednesday
+function weekday_name(n){
+    /*write the code to print the weekday name in lower case when
+     the weekday number is given using switch statements*/
+    
+switch (n) {
+  case 1:
+    console.log("monday");
+    break;
+  case 2:
+    console.log("tuesday");
+    break;
+  case 3:
+    console.log("wednesday");
+    break;
+  case 4:
+    console.log("thursday");
+    break;
+  case 5:
+    console.log("friday");
+    break;
+  case 6:
+    console.log("saturday");
+    break;
+  case 7:
+    console.log("sunday");
+    break;
+  default:
+    console.log("invalid");
+}
+}
